@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import axios from "axios";
 
@@ -17,7 +19,7 @@ export default function Home() {
       <Link href="/comments" prefetch={false}>
         See Comments
       </Link>
-      <button>Post Comment</button>
+      <button onClick={comment}>Post Comment</button>
     </div>
   );
 }
